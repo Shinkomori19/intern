@@ -5,12 +5,12 @@ Those files are /cmd/client/client_main.go and /cmd/server/server_main.go.<br>
 
 Here are the steps for executing the code.
 
-### Install the protocol compiler plugins for Go using the following commands:<br>
+- ### Install the protocol compiler plugins for Go using the following commands:<br>
 
 `$ go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28`<br>
 `$ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2`<br>
 
-### Update PATH so that the protoc compiler can find the plugins:<br>
+- ### Update PATH so that the protoc compiler can find the plugins:<br>
 
 `$ export PATH="$PATH:$(go env GOPATH)/bin"`
 
