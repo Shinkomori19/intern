@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option go_package = "google.golang.org/grpc/examples/helloworld/helloworld";
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.helloworld";
+option java_outer_classname = "HelloWorldProto";
+
+package helloworld;
+
+// The Echoing service definition.
+service Echo {
+  // Echos message it got from client-side
+  rpc EchoMessage (EchoRequest) returns (EchoReply) {}
+}
+
+// The request message from client.
+message EchoRequest {
+  string reqMessage = 1;
+}
+
+// The response message from server.
+message EchoReply {
+  string resMessage = 1;
+}
