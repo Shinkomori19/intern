@@ -36,12 +36,13 @@ Here are the steps for executing the code.
 
 ### 8. To send a request to the server, open another terminal and:<br>
 
-`$ ./client_main`
+`$ ./client_main`<br>
 This sends a default message of "No specified message." to server.<br>
 
 ### 9. To specify a message, do:<br>
 
-`$ ./client_main --reqMessage="<TYPE A MESSAGE HERE>"`
+`$ ./client_main --reqMessage="<TYPE A MESSAGE HERE>"`<br>
+You will get your message echoed back by the server.
 
 ### To clean executables, run:<br>
 
