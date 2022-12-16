@@ -1,7 +1,11 @@
-# Echo server with Go and gRPC
+# Echo server with Go and gRPC on Docker
 
-There are two .go files that need to be run, in order to achieve echo server functionality.<br>
-Those files are /cmd/client/client_main.go and /cmd/server/server_main.go.<br>
+Clone repository. Then, build using docker:
+`docker build -t echo .`
+
+When deleting all docker images and containers, do:
+`docker rmi $(docker images -a -q)`
+`docker container prun`
 
 Here are the steps for executing the code.
 
