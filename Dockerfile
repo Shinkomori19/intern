@@ -3,7 +3,6 @@ FROM golang:1.19
 RUN mkdir /build
 ADD . /build
 WORKDIR /build
-
 RUN cd /build/
 
 RUN apt-get update && apt install -y protobuf-compiler

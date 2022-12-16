@@ -13,7 +13,7 @@ import (
 	"google.golang.org/grpc"
 )
 
-var port = flag.Int("port", 50051, "The server port")
+var port = flag.Int("port", 8000, "The server port")
 
 // server is used to implement helloworld.GreeterServer.
 type server struct {
