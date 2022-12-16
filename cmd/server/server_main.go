@@ -13,9 +13,7 @@ import (
 	"google.golang.org/grpc"
 )
 
-var (
-	port = flag.Int("port", 50051, "The server port")
-)
+var port = flag.Int("port", 50051, "The server port")
 
 // server is used to implement helloworld.GreeterServer.
 type server struct {
@@ -31,6 +29,7 @@ func main() {
 	lis, err := net.Listen("tcp", fmt.Sprintf(":%d", *port))
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
+
 	}
 	s := grpc.NewServer()
 	pb.RegisterEchoServer(s, &server{})
