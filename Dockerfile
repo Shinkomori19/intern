@@ -17,4 +17,4 @@ RUN go get -u google.golang.org/grpc
 RUN cd api && protoc --go_out=../pkg/grpc --go_opt=paths=source_relative --go-grpc_out=../pkg/grpc --go-grpc_opt=paths=source_relative echo.proto
 RUN cd .. & make
 
-CMD [ "/build/client_main" ]
+CMD [ "/client_main" ]
