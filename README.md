@@ -1,12 +1,18 @@
 # Echo server with Go and gRPC on Docker
 
+This docker repository could be found in `https://hub.docker.com/repository/docker/shinkomori/echo`
+
 Clone repository. Then, build using docker:
 `docker build -t echo .`
 
 When deleting all docker images and containers, do:
 `docker rmi $(docker images -a -q)`
-`docker container prun`
+`docker container prune`
 
+`docker container run --name server -it echo /bin/bash`
+`docker container run --name client -it echo /bin/bash`
+
+<!--
 Here are the steps for executing the code.
 
 ### 1. Init go.mod file:<br>
@@ -50,4 +56,4 @@ You will get your message echoed back by the server.
 
 ### To clean executables, run:<br>
 
-`$ make clean`
+`$ make clean` -->
