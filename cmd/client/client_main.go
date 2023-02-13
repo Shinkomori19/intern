@@ -18,7 +18,7 @@ const (
 )
 
 var (
-	addr       = flag.String("addr", "localhost:8080", "the address to connect to")
+	addr       = flag.String("addr", "localhost:8000", "the address to connect to")
 	reqMessage = flag.String("reqMessage", defaultReqMessage, "Message sent to server")
 )
 
